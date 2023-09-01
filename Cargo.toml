@@ -1,0 +1,5 @@
+[workspace]
+members = ["langchain_rs", "test_suite"]
+
+[patch.crates-io]
+langchain_rs = { path = "langchain_rs" }
