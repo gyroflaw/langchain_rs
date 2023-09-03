@@ -2,20 +2,27 @@
 name = "langchain_rs"
 version = "0.0.1"                                       # remember to update html_root_url
 authors = ["Ryo Kanazawa <ryo.kanazawa34@gmail.com>"]
-build = "build.rs"
-categories = ["encoding", "no-std", "no-std::no-alloc"]
+categories = ["llm", "gen-ai"]
 description = "Rust version of Langchain"
 documentation = "https://docs.rs/langchain_rs"
-edition = "2018"
+edition = "2021"
 homepage = "https://github.com/gyroflaw/langchain_rs"
 keywords = ["serde", "serialization", "no_std"]
 license = "Apache-2.0"
 readme = "crates-io.md"
-repository = "https://github.com/serde-rs/serde"
-rust-version = "1.31"
+repository = "https://github.com/gyroflaw/langchain_rs"
+rust-version = "1.67"
 
 
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+minijinja = "1.0.7"
+fstrings = "0.2.3"
+
+[dev-dependencies]
+dotenvy = "0.15.7"
 ### FEATURES #################################################################
-
-[features]
-default = ["std"]
