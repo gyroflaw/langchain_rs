@@ -20,6 +20,6 @@ jobs:
             target/
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.toml') }}
       - name: Publish
-        run: cargo publish --token ${CRATES_TOKEN} -p
+        run: cargo publish --token ${CRATES_TOKEN} -p langchain_rs
         env:
           CRATES_TOKEN: ${{ secrets.CRATES_TOKEN }}

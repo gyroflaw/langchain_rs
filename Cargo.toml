@@ -1,7 +1,7 @@
 [workspace]
 members = ["langchain_rs"]
-
 default-members = ["langchain_rs"]
+resolver = "2"
 
 [patch.crates-io]
 langchain_rs = { path = "langchain_rs" }
