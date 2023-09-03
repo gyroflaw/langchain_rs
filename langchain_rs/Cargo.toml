@@ -7,11 +7,10 @@ description = "Rust version of Langchain"
 documentation = "https://docs.rs/langchain_rs"
 edition = "2021"
 homepage = "https://github.com/gyroflaw/langchain_rs"
-keywords = ["serde", "serialization", "no_std"]
-license = "Apache-2.0"
+keywords = ["langchain", "llm"]
+license = "MIT"
 readme = "crates-io.md"
 repository = "https://github.com/gyroflaw/langchain_rs"
-rust-version = "1.67"
 
 
 [dependencies]
