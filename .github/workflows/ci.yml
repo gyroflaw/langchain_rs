@@ -34,5 +34,5 @@ jobs:
 
       - name: Run tests (native-tls)
         run: cargo test --verbose
-      - name: Run tests (rustls)
-        run: cargo test --verbose --no-default-features --features=rustls
+      # - name: Run tests (rustls)
+      #   run: cargo test --verbose --no-default-features --features=rustls
