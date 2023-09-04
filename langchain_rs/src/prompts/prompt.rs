@@ -69,20 +69,20 @@ impl Prompt for PromptTemplate {
 }
 
 // Creates a hashmap of arguments for a prompt
-#[macro_export]
-macro_rules! prompt_args {
-    () => (PromptArgs::new());
-    ( $($key:expr => $value:expr,)+ ) => (prompt_args!($($key => $value),+));
-    ( $($key:expr => $value:expr),* ) => {
-        {
-            let mut args= PromptArgs::new();
-            $(
-                args.insert($key, $value).unwrap();
-            )*
-            args
-        }
-    };
-}
+// #[macro_export]
+// macro_rules! prompt_args {
+//     () => (PromptArgs::new());
+//     ( $($key:expr => $value:expr,)+ ) => (prompt_args!($($key => $value),+));
+//     ( $($key:expr => $value:expr),* ) => {
+//         {
+//             let mut args= PromptArgs::new();
+//             $(
+//                 args.insert($key, $value).unwrap();
+//             )*
+//             args
+//         }
+//     };
+// }
 
 #[cfg(test)]
 mod tests {
@@ -125,23 +125,23 @@ mod tests {
         assert_eq!(result.unwrap(), "Hello world!");
     }
 
-    #[test]
-    fn should_prompt_macro_work() {
-        let args: HashMap<&str, &str> = prompt_args! {};
-        assert!(args.is_empty());
+    // #[test]
+    // fn should_prompt_macro_work() {
+    //     let args: HashMap<&str, &str> = prompt_args! {};
+    //     assert!(args.is_empty());
 
-        let args = prompt_args! {
-            "name" => "world"
-        };
-        assert_eq!(args.len(), 1);
-        assert_eq!(args.get("name").unwrap(), &"world");
+    //     let args = prompt_args! {
+    //         "name" => "world"
+    //     };
+    //     assert_eq!(args.len(), 1);
+    //     assert_eq!(args.get("name").unwrap(), &"world");
 
-        let args = prompt_args! {
-            "name" => "world",
-            "age" => "18"
-        };
-        assert_eq!(args.len(), 2);
-        assert_eq!(args.get("name").unwrap(), &"world");
-        assert_eq!(args.get("age").unwrap(), &"18");
-    }
+    //     let args = prompt_args! {
+    //         "name" => "world",
+    //         "age" => "18"
+    //     };
+    //     assert_eq!(args.len(), 2);
+    //     assert_eq!(args.get("name").unwrap(), &"world");
+    //     assert_eq!(args.get("age").unwrap(), &"18");
+    // }
 }
