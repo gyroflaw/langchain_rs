@@ -1,0 +1,17 @@
+[package]
+name = "langchain_rs_examples"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.*"
+dotenvy = "0.15.7"
+env_logger = "0.10.0"
+langchain_rs = { path = "../langchain_rs" }
+tokio = { version = "1", features = ["full"] }
+
+[[bin]]
+name = "openai"
+path = "bin/openai.rs"
+doctest = false
+test = false
