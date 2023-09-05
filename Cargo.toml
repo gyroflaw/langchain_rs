@@ -1,6 +1,6 @@
 [workspace]
-members = ["langchain_rs"]
-default-members = ["langchain_rs"]
+members = ["langchain_rs", "examples"]
+default-members = ["langchain_rs", "examples"]
 resolver = "2"
 
 [patch.crates-io]
