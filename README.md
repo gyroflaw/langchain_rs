@@ -1,8 +1,13 @@
-# Langchain_rs
+# langchain_rs
 
-[![Test](https://github.com/gyroflaw/langchain_rs/actions/workflows/ci.yml/badge.svg)](https://github.com/gyroflaw/langchain_rs/actions/workflows/ci.yml)
+[![Build Status]][actions] [![Latest Version]][crates.io]
 
-Langchain_rs is a Rust implementation of LangChain, a library for building applications with Large Language Models (LLMs). This version of LangChain is specifically designed for use with Rust and provides seamless integration with LLMs.
+[Build Status]: https://github.com/gyroflaw/langchain_rs/actions/workflows/ci.yml/badge.svg
+[actions]: https://github.com/gyroflaw/langchain_rs/actions/workflows/ci.yml
+[Latest Version]: https://img.shields.io/crates/v/langchain_rs.svg
+[crates.io]: https://crates.io/crates/langchain_rs
+
+`langchain_rs` is a Rust implementation of LangChain, a library for building applications with Large Language Models (LLMs). This version of LangChain is specifically designed for use with Rust and provides seamless integration with LLMs.
 
 ## Features
 
@@ -15,7 +20,7 @@ Langchain_rs is a Rust implementation of LangChain, a library for building appli
 
 ## Installation
 
-To use Langchain_rs in your Rust project, add the following to your `Cargo.toml` file:
+To use `langchain_rs` in your Rust project, add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
@@ -28,16 +33,16 @@ langchain_rs = "0.0.1"
 
 ## Contributing
 
-Contributions to Langchain_rs are welcome! If you would like to contribute, please follow these steps:
+Contributions to `langchain_rs` are welcome! If you would like to contribute, please follow these steps:
 
-1. Fork the Langchain_rs repository
+1. Fork the `langchain_rs` repository
 2. Create a new branch for your contributions
 3. Make your changes and write tests if necessary
 4. Ensure that all tests pass
 5. Submit a pull request with your changes
 
-Please refer to the CONTRIBUTING.md file in the repository for more information on how to contribute.
+Please refer to the [CONTRIBUTING.md](https://github.com/gyroflaw/langchain_rs/blob/main/CONTRIBUTING.MD) file in the repository for more information on how to contribute.
 
 ## License
 
-Langchain_rs is released under the MIT License. See the LICENSE file for more information.
+`langchain_rs` is released under the MIT License. See the [LICENSE](https://github.com/gyroflaw/langchain_rs/blob/main/LICENSE) file for more information.
