@@ -15,3 +15,9 @@ name = "openai"
 path = "bin/openai.rs"
 doctest = false
 test = false
+
+[[bin]]
+name = "message_history"
+path = "bin/message_history.rs"
+doctest = false
+test = false

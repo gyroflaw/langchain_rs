@@ -17,6 +17,7 @@ anyhow = "1.0.*"
 async-openai = "0.14.0"
 async-trait = "0.1.68"
 env_logger = "0.10.0"
+futures = "0.3"
 mongodb = "2.6.1"
 qdrant-client = "1.4.0"
 redis = { version = "0.23.3", features = ["tokio-comp", "json"] }
@@ -24,6 +25,8 @@ reqwest = { version = "0.11", features = ["json"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_derive = "1.0"
 serde_json = "1.0"
+strum = "0.25"
+strum_macros = "0.25"
 tiktoken-rs = "0.5.0"
 tokio = { version = "1", features = ["full"] }
 tokio-stream = "0.1.12"
