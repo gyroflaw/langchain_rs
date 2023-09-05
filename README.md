@@ -1,5 +1,7 @@
 # Langchain_rs
 
+[![Test](https://github.com/gyroflaw/langchain_rs/actions/workflows/ci.yml/badge.svg)](https://github.com/gyroflaw/langchain_rs/actions/workflows/ci.yml)
+
 Langchain_rs is a Rust implementation of LangChain, a library for building applications with Large Language Models (LLMs). This version of LangChain is specifically designed for use with Rust and provides seamless integration with LLMs.
 
 ## Features
@@ -22,9 +24,7 @@ langchain_rs = "0.0.1"
 
 ## Usage
 
-**TBD**
-
-For more detailed usage examples and API documentation, refer to the official Langchain_rs documentation.
+**Coming Soon**
 
 ## Contributing
 
