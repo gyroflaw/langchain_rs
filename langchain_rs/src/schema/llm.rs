@@ -11,15 +11,9 @@ pub trait PromptValue {
 
 #[async_trait::async_trait]
 pub trait LLM: Send + Sync {
-    // async fn generate_prompt<T: PromptValue>(
-    //     &self,
-    //     prompts: Vec<T>,
-    //     stop: Option<&str>,
-    // ) -> LLMResult;
     async fn generate(&self, text: &str) -> Result<GenerateResult>;
     // async fn predict_messages(&self, messages: Vec<Message>, stop: Option<&str>) -> Message;
     fn tokenize(&self, text: &str) -> Result<Vec<String>>;
-    // fn get_num_tokens_from_messages(&self, messages: Vec<Message>) -> usize;
 }
 
 #[derive(Debug, Serialize, Deserialize)]
