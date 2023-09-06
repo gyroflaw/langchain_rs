@@ -35,6 +35,10 @@ impl MongoDBMessageHistory {
 
 #[async_trait::async_trait]
 impl MessageHistory for MongoDBMessageHistory {
+    async fn init(&self) -> Result<()> {
+        unimplemented!("Not needed to implement")
+    }
+
     async fn add_message(&self, message: Message) -> Result<()> {
         self.collection.insert_one(message, None).await?;
         Ok(())
