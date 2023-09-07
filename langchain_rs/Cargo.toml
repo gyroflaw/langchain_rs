@@ -43,6 +43,7 @@ dotenvy = "0.15.7"
 ### FEATURES #################################################################
 [features]
 default = ["openai", "mongodb", "qdrant"]
+
 # LLMS
 openai = ["dep:async-openai"]
 
@@ -51,4 +52,6 @@ redis = ["dep:redis"]
 mongodb = ["dep:mongodb"]
 
 # Vector store
-qdrant = ["qdrant-client"]
+qdrant = ["dep:qdrant-client"]
+
+# Tools
