@@ -22,7 +22,10 @@
 
 To use `langchain_rs` in your Rust project, add the following to your `Cargo.toml` file:
 
+> [!NOTE]  
+> `openai`, `mongodb`, and `qdrant` features are enabled by default.
+
 ```toml
 [dependencies]
-langchain_rs = "0.0.1"
+langchain_rs = "0.0.2"
 ```
