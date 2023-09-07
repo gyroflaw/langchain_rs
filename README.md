@@ -7,7 +7,7 @@
 [Latest Version]: https://img.shields.io/crates/v/langchain_rs.svg
 [crates.io]: https://crates.io/crates/langchain_rs
 
-`langchain_rs` is a Rust implementation of LangChain, a library for building applications with Large Language Models (LLMs). This version of LangChain is specifically designed for use with Rust and provides seamless integration with LLMs.
+`langchain_rs` is a Rust implementation of [LangChain](https://github.com/langchain-ai/langchain), a library for building applications with Large Language Models (LLMs). This version of LangChain is specifically designed for use with Rust and provides seamless integration with LLMs.
 
 ## Features
 
