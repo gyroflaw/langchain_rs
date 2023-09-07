@@ -1,6 +1,6 @@
 [package]
 name = "langchain_rs"
-version = "0.0.1"                                       # remember to update html_root_url
+version = "0.0.2"                                       # remember to update html_root_url
 authors = ["Ryo Kanazawa <ryo.kanazawa34@gmail.com>"]
 categories = ["llm", "gen-ai"]
 description = "Rust version of Langchain"
